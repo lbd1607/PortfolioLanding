@@ -1,0 +1,115 @@
+/* Laura Davis */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  font-family: 'Montserrat', 'Century Gothic', 'Arial', sans-serif; 
+}
+
+.iefix{
+  display:flex;
+}
+
+nav.navbar{
+  border-radius: 0px;
+  border-width: 0px;
+  padding: 0;
+  height: auto;
+  font-size: 20px;
+  width: auto;
+  padding-left: 45px;
+  color: #bbb !important;
+}
+
+nav.navbar .navbar-brand{
+  color: #6fd !important;
+  font-size: 24px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+}
+
+nav.navbar li.nav-item{
+  margin-right: 5px;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+li.nav-item a:hover:not(.active){
+  transition: 0.3s;
+}
+
+div.bg{
+  width: 140%;
+  transform: translate(-20%, -5%);
+  position: relative;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.landing{
+  height: 100%;
+  width: 30%;
+  padding-left: 10px;
+  padding-top: 20px;
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+.landh1{
+  font-size:45px;
+  letter-spacing: 3px;
+  color: #6fd;
+  font-family: 'Lato', sans-serif;
+}
+
+.landp{
+  color: #bbb;
+}
+
+.btn.btn-lg.btn-block.btn-outline-dark.one{
+  border-color: #6fd;
+  color: #6fd;
+  font-weight: bold;
+  width: 240px;
+}
+
+.btn.btn-lg.btn-block.btn-outline-dark.one:hover{
+  background-color: #6fd;
+  color: #333;
+  
+}
+
+@media screen and (max-width: 990px){
+  #mynav{
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    width: inherit;
+  }
+  .landing{
+    width: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+  }
+  
+  .landh1{
+  font-size: 28px;
+  letter-spacing: 1px;
+  }
+
+.landp{
+  font-size: 14px;
+  }
+}
